@@ -126,7 +126,7 @@ public class ServiceManager
 			}
 		}
 	}
-	
+
 	private static void CheckWindowsVersion()
 	{
 		OperatingSystem os = Environment.OSVersion;
