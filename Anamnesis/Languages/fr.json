@@ -643,7 +643,7 @@
 	"Item_InvisibleBody": "Invisible",
 	"Item_InvisibleBodyDesc": "Vous rend invisible (Sauf la tête)",
 	"Item_InvisibleHead": "Invisible",
-	"Item_InvisibleHeadDesc": "Rend votre tête invisible"
+	"Item_InvisibleHeadDesc": "Rend votre tête invisible",
 	
 	"Help_Title": "Aide",
 	"Help_Tip": "Visiter le Wiki",
