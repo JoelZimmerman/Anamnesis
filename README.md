@@ -5,7 +5,7 @@ Anamnesis is a standalone tool that is used to modify certain clientside-only va
 
 Anamnesis7 is an unofficial quick fix to make it run on Windows versions older than 10.
 
-We actively encourage people to contribute to the project with their forks to improve the tool overall. With this said, Anam devs are **not** supporting builds done via forks (such as this) and, if you've received a release of the tool from any repo that isn't [imchillin/Anamnesis](https://github.com/imchillin/Anamnesis), you are encouraged to not bring the issue up because this is not an actively maintained build and is just a small mod to make it run on Win7 for some friends.
+We actively encourage people to contribute to the project with their forks to improve the tool overall. With this said, Anam devs are **not** supporting builds done via forks (such as this) and, if you've received a release of the tool from any repo that isn't [imchillin/Anamnesis](https://github.com/imchillin/Anamnesis), you are encouraged to NOT bring issues up with neither them nor me because this is not an actively maintained build and is just a small mod to make it run on Win7 for some friends.
 
 ## Getting Started
 
