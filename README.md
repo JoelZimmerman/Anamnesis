@@ -1,21 +1,17 @@
 
-# [![Anamnesis](ArtSource/DownloadButton.png "Download Releases")](https://github.com/imchillin/Anamnesis/releases)
-
-
-# Anamnesis
-![Anamnesis](Anamnesis/Assets/Anamnesis.png "Anamnesis")
+# Anamnesis7
+![Anamnesis7](Anamnesis/Assets/Anamnesis.png "Anamnesis7")
 
 Anamnesis is a standalone tool that is used to modify certain clientside-only values and allow the user a greater degree of flexibility for making creative and interesting screenshots. In short, this tool allows its users to temporarily change their race, gender, looks, equipment, etc. in game without actually making any changes visible to other players. This tool also allows users to create their own poses. 
 
-Anamnesis is the successor to [Concept Matrix (CMTool)](https://github.com/imchillin/CMTool).
+Anamnesis7 is an unofficial quick fix to make it run on Windows versions older than 10.
 
-We actively encourage people to contribute to the project with their forks to improve the tool overall. With this said, we are **not** supporting builds done via forks and, if you've received a release of the tool from any repo that isn't [imchillin/Anamnesis](https://github.com/imchillin/Anamnesis), you are encouraged to bring the issue up with the person who packaged the build, as it will inevitably contain code we're unfamiliar with.
+We actively encourage people to contribute to the project with their forks to improve the tool overall. With this said, Anam devs are **not** supporting builds done via forks (such as this) and, if you've received a release of the tool from any repo that isn't [imchillin/Anamnesis](https://github.com/imchillin/Anamnesis), you are encouraged to NOT bring issues up with neither them nor me because this is not an actively maintained build and is just a small mod to make it run on Win7 for some friends.
 
 ## Getting Started
 
 ### Prerequisites
 - [.NET 6.0 Desktop Runtime x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.6-windows-x64-installer) installed on your computer. Anamnesis will only work with 64-bit versions of Windows. Support will not be added for x86/32-bit versions of Windows (As Patch 6.15 Final Fantasy XIV [doesn't support 32 bit OS anymore](https://na.finalfantasyxiv.com/lodestone/news/detail/73031a839564edaca5f4bce18043b9b0e339b52a))
-- Windows 10 or 11 (there are no plans to add support for older versions of Windows that [Microsoft is not in turn supporting](https://www.microsoft.com/en-au/windows/windows-7-end-of-life-support-information), or other operating systems).
 
 ### Installation
 
