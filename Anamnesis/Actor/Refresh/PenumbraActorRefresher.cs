@@ -16,6 +16,13 @@ public class PenumbraActorRefresher : IActorRefresher
 		if (!SettingsService.Current.UseExternalRefresh)
 			return false;
 
+		if (PoseService.Instance.IsEnabled)
+			return false;
+
+		// Penumbra can't refresh world frozen actors
+		if (PoseService.Instance.FreezeWorldPosition)
+			return false;
+
 		// Penumbra can't refresh overworld actors in gpose
 		if (GposeService.Instance.IsGpose && actor.IsOverworldActor)
 			return false;
@@ -28,9 +35,15 @@ public class PenumbraActorRefresher : IActorRefresher
 		if (SettingsService.Current.EnableNpcHack && actor.ObjectKind == ActorTypes.Player)
 		{
 			actor.ObjectKind = ActorTypes.BattleNpc;
-			await Penumbra.Penumbra.Redraw(actor.ObjectIndex);
-			await Task.Delay(200);
-			actor.ObjectKind = ActorTypes.Player;
+			try
+			{
+				await Penumbra.Penumbra.Redraw(actor.ObjectIndex);
+				await Task.Delay(200);
+			}
+			finally
+			{
+				actor.ObjectKind = ActorTypes.Player;
+			}
 		}
 		else
 		{
