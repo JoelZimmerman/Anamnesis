@@ -30,13 +30,13 @@ jobs:
         
     - name: Checkout Submodules
       uses: snickerbockers/submodules-init@v4
-      
-    - name: Write Version file
-      uses: visiosto/replace-value@v1.0.0
+       
+    - name: REplace version info
+      uses: Nambers/ReplaceStringInFile@v1.3
       with:
-        file: './Anamnesis/VersionInfo.cs'
-        replaced: '2000, 01, 01, 00, 00, 00'
-        value: ${{ steps.build-time.outputs.formattedTime }}
+       path: './Anamnesis/VersionInfo.cs'
+       oldString: '2000, 01, 01, 00, 00, 00'
+       newString: ${{ steps.build-time.outputs.formattedTime }}
 
     - name: Install .NET
       uses: actions/setup-dotnet@v1.8.2
