@@ -8,6 +8,7 @@ using System.IO;
 using System.Text.Json.Serialization;
 using System.Windows.Media.Imaging;
 using Anamnesis.Serialization;
+using Anamnesis.Serialization.Converters;
 using Anamnesis.Services;
 
 [Serializable]
@@ -15,7 +16,7 @@ public abstract class FileBase
 {
 	public string? Author { get; set; }
 	public string? Description { get; set; }
-	public string? Version { get; set; }
+	[Newtonsoft.Json.JsonConverter(typeof(VersionConverter))] public string? Version { get; set; }
 	public string? Base64Image { get; set; }
 
 	[JsonIgnore] public virtual string TypeName => this.GetType().Name;
